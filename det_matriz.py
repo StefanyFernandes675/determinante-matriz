@@ -3,11 +3,11 @@ matriz = []
 
 print("-----Calculador de determinante de matriz até matriz 3X3-----")
 while tamanho_matriz > 3 or tamanho_matriz <= 0:
-    tamanho_matriz = int(input("\nQuantas colunas e linhas tem a matriz. \nExemplo (3X3): 4 \n Digite: "))
+    tamanho_matriz = int(input("\nQuantas colunas e linhas tem a matriz. \nExemplo (3X3): 3 \n Digite: "))
 print(f"Matriz {tamanho_matriz}X{tamanho_matriz}")
 
-for coluna in range(0, tamanho_matriz):
-    for linha in range(0, tamanho_matriz):
+for linha in range(0, tamanho_matriz):
+    for coluna in range(0, tamanho_matriz):
         numero = float(input(f"Digite o número que está na coluna {coluna+1} e linha {linha+1}: ")) 
         matriz.append(numero)
 
